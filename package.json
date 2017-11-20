@@ -1,0 +1,8 @@
+{
+  "name": "pawesome_buds",
+  "version": "0.0.1",
+  "description": "Dog Matcher",
+  "main": "index.js",
+  "author": "Greg and Chris Pfaff",
+  "license": "MIT"
+}
