@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './components/App';
+import Nav from './components/presentational/Nav';
 import Header from './components/presentational/Header';
-import FormPage from './components/container/FormPage';
-import AboutPage from './components/container/AboutPage';
 
 class Routes extends Component {
   render() {
@@ -12,15 +11,7 @@ class Routes extends Component {
       <BrowserRouter>
         <div>
           <Header message="PawesomeBuds"/>
-          <ul>
-            <li><Link to="/">App</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/home">Home</Link></li>
-          </ul>
-
-          <Route exact path="/" component={App} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/home" component={FormPage} />
+          <Nav />
         </div>
       </BrowserRouter>
     );
