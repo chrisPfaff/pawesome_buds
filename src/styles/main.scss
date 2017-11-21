@@ -20,11 +20,11 @@ body {
   }
 
   h1 {
-    font-size: $header-font;
     text-align: center;
 
     a {
       color: $white;
+      font-size: $header-font;
       letter-spacing: 10px;
       text-decoration: none;
       text-shadow: $text-shadow;
