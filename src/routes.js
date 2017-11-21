@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import App from './components/App';
 import Header from './components/presentational/Header';
-import HomePage from './components/container/HomePage';
+import FormPage from './components/container/FormPage';
 import AboutPage from './components/container/AboutPage';
 
 class Routes extends Component {
@@ -20,7 +20,7 @@ class Routes extends Component {
 
           <Route exact path="/" component={App} />
           <Route path="/about" component={AboutPage} />
-          <Route path="/home" component={HomePage} />
+          <Route path="/home" component={FormPage} />
         </div>
       </BrowserRouter>
     );
