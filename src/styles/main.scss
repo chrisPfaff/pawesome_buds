@@ -1,8 +1,14 @@
 
 @import '../styles/variables';
+@import '../styles/mixins/cta';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400');
+
 
 body {
   background-color: $background;
+  font-family: 'Montserrat',
+  sans-serif;
+
 
   ul {
     display: inline-flex;
@@ -18,7 +24,7 @@ body {
 
     a {
       color: $white;
-      letter-spacing: .5px;
+      letter-spacing: 10px;
       text-decoration: none;
       text-shadow: $text-shadow;
     }
