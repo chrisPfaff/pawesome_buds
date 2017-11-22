@@ -16,11 +16,6 @@ const Nav = (props) => {
         <li>
           <Link to="/form">Form</Link>
         </li>
-
-        <li>
-          <Link to="/notfound">Not Found</Link>
-        </li>
-
       </ul>
     </div>
   );

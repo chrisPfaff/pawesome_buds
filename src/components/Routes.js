@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import { Match, Miss } from "react-router";
 
 import HomePage from "./container/HomePage";
 import FormPage from "./container/FormPage";
@@ -17,10 +16,6 @@ class Routes extends Component {
         <Route path="/form" component={FormPage} />
         <Route component={NotFound} />
       </Switch>
-        // <Match pattern="/" exactly component={HomePage} />
-        // <Match pattern="/about" exactly component={AboutPage} />
-        // <Match path="/form" component={FormPage} />
-        // <Miss component={NotFound} />
     );
   }
 }
