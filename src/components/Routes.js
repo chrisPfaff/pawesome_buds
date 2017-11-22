@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, IndexRoute } from "react-router-dom";
 
 import HomePage from "./container/HomePage";
 import FormPage from "./container/FormPage";
@@ -10,11 +10,10 @@ class Routes extends Component {
   render() {
     return (
       <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/home" exact component={HomePage} />
+        <Route exact path="/" component={HomePage}/>
         <Route path="/about" component={AboutPage} />
         <Route path="/form" component={FormPage} />
-        <Route component={NotFound} />
+        <Route path="*" component={NotFound} />
       </Switch>
     );
   }

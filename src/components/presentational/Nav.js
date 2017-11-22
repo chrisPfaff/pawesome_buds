@@ -2,11 +2,12 @@ import React from 'react';
 import { NavLink as Link } from 'react-router-dom';
 
 const Nav = (props) => {
+
   return (
     <div className="navigation">
       <ul>
         <li>
-          <Link activeClassName="is-active" to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
 
         <li>
