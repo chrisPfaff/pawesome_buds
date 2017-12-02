@@ -1,0 +1,9 @@
+@mixin inputs {
+  border: 2px solid $black;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 250px;
+}
+
