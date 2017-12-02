@@ -14,4 +14,4 @@ class FormPage extends Component {
   }
 }
 
-export default AddDog;
+export default FormPage;
