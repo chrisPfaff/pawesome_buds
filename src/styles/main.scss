@@ -1,6 +1,8 @@
 
 @import '../styles/variables';
 @import '../styles/mixins/cta';
+@import '../styles/mixins/inputs';
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400');
 
 
@@ -50,6 +52,12 @@ body {
   h2 {
     color: $white;
     text-shadow: $text-shadow;
+  }
+
+  input,
+  select,
+  textarea {
+    @include inputs;
   }
 
   .button {
