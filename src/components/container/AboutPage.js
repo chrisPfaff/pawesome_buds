@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+//about page
+
 class About extends Component {
   render() {
     return (
@@ -10,7 +12,7 @@ class About extends Component {
              consectetur adipisicing elit. Harum, consectetur, at obcaecati accusantium facilis aut voluptates unde accusamus eos.
              Error quo aut vitae et dolorum, ratione necessitatibus
              tempora omnis obcaecati?</p>
-          <Link to="/" className="button">Home </Link>
+          <Link to="/home" className="button">Home </Link>
       </div>
     );
   }
