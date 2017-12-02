@@ -70,6 +70,13 @@ body {
       font-size: $subheader-font;
       text-shadow: $text-shadow;
     }
+
+    & .dog-form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+    }
   }
 
   .navigation {
