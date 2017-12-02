@@ -2,17 +2,42 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class AddDog extends Component {
+  constructor() {
+    super();
 
+
+  }
+
+  addDog(event) {
+    event.preventDefault();
+    const dog = {
+      name: this.name.value,
+      breed: this.breed.value,
+      weight: this.weight.value,
+      gender: this.gender.value,
+    };
+    console.log(dog, '🐶🐶🐶🐶🐶🐶🐶🐶🐶🐶');
+  }
 
   render() {
     const { message } = this.props;
 
     return (
-      <div className="dog-form">
+      <form className="dog-form" onSubmit={(event) => this.addDog(event)}>
         <h3> {message} </h3>
         <label htmlFor="dog-name"/>
-        <input className="dog-name" id="dog-name" type="text" placeholder="Add your dog" />
-      </div>
+        <input ref={(input) => this.name = input} className="dog-name" id="dog-name" type="text" placeholder="Add your dogs name" />
+        <label htmlFor="dog-breed" />
+        <input ref={(input) => this.breed = input} className="dog-breed" id="dog-breed" type="text" placeholder="What is your dogs breed?" />
+        <label htmlFor="dog-weight" />
+        <input ref={(input) => this.weight = input} className="dog-weight" id="dog-weight" type="text" placeholder="Add your dogs weight" />
+        <label htmlFor="dog-gender" />
+        <input ref={(input) => this.gender = input} className="dog-gender" id="dog-gender" type="text" placeholder="Add your dogs gender" />
+        <label htmlFor="dog-picture" />
+        <input ref={(input) => this.picture = input}
+        className="dog-picture" id="dog-picture" type="text" placeholder="Add your dogs picture" />
+        <button className="button" type="submit"> +Add Your Dog</button>
+      </form>
     );
   }
 }

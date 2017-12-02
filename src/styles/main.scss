@@ -64,11 +64,23 @@ body {
     @include cta;
   }
 
+  .icon {
+    padding: 0 20px;
+    width: 30px;
+  }
+
   .signup-form {
     &--header {
       color: $white;
       font-size: $subheader-font;
       text-shadow: $text-shadow;
+    }
+
+    & .dog-form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
     }
   }
 
