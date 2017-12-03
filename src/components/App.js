@@ -6,6 +6,7 @@ import Nav from '../components/presentational/Nav';
 import Header from '../components/presentational/Header';
 
 class App extends Component {
+<<<<<<< HEAD
   constructor() {
     super();
 
@@ -28,6 +29,8 @@ class App extends Component {
   // componentDidMount() {
   //   this.newDog({name:'chris'});
   // }
+=======
+>>>>>>> 9dc7701e711f63d7b7b91fc2f895f93d4113759d
 
   render() {
     return (
